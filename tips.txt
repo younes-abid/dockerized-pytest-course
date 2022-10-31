@@ -1,0 +1,7 @@
+docker-compose build
+docker-compose run test sh
+
+pytest -k test_fitness_log
+pytest -h
+
+pytest -k map

@@ -1,7 +1,18 @@
-import os
+import os , sys
+from pathlib import Path
 import pytest
 
-from scripts import data_processor
+FILE = Path(__file__).resolve()
+ROOT = FILE.parents[0].parents[0]
+if str(ROOT) not in sys.path:
+    sys.path.append(str(ROOT))  # add ROOT to PATH
+
+try:
+    from ..scripts import data_processor
+except:
+    from scripts import data_processor
+
+
 
 
 @pytest.fixture(scope="module")
