@@ -5,3 +5,11 @@ pytest -k test_fitness_log
 pytest -h
 
 pytest -k map
+pytrdt -k except
+
+######
+add in code: breakpoint()
+in terminal write: locals() # shows all local variables
+dir(exp)
+exit
+######

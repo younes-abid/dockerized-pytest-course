@@ -5,5 +5,3 @@ class Point():
         self.long = long
     def get_lat_long(self):
         return self.lat, self.long
-
-
